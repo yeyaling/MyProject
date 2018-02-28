@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:cardCornerRadius="@dimen/round_value"
+    android:id="@+id/itemShoppingCardView">
+    <!--android:background="@drawable/hui_border_white_bg"-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40px">
+        <ImageView
+            android:id="@+id/ShoppingRvSdv"
+            android:layout_width="match_parent"
+            android:layout_height="330px"
+            android:scaleType="fitXY" />
+        <TextView
+            android:id="@+id/ShoppingRvNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ShoppingRvSdv"
+            android:layout_marginTop="26px"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="24px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"/>
+
+        <TextView
+            android:id="@+id/ShoppingRvPriceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ShoppingRvNameTv"
+            android:layout_marginTop="20px"
+            android:singleLine="true"
+            android:paddingLeft="30px"
+            android:text="111111"
+            android:textColor="@color/colorPink"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/ShoppingRvOriginalPriceTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ShoppingRvPriceTv"
+            android:layout_toRightOf="@id/ShoppingRvPriceTv"
+            android:paddingLeft="12px"
+            android:singleLine="true"
+            tools:text="¥78778"
+            android:textSize="20px"
+            android:paddingRight="30px" />
+
+        <TextView
+            android:id="@+id/ShoppingRvSalesNumTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ShoppingRvPriceTv"
+            android:layout_marginTop="38px"
+            android:singleLine="true"
+            android:text="string/shopping_sales_num"
+            android:textSize="18px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px" />
+    </RelativeLayout>
+</RelativeLayout>

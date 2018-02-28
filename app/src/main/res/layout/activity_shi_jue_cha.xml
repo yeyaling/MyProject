@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/com.example.fragmenttest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    <!--这里 你就可以放title-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:text="Title"
+        android:gravity="center"/>
+
+
+    <!--contentview就是最下面滑动的内容-->
+    <!--ZoomView就是上面的图片 -->
+    <com.example.john.viewpagerproject.view.PullToZoomScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        custom:scrollContentView="@layout/profile_content_view"
+        custom:scrollZoomView="@layout/imagetitle" />
+
+</LinearLayout>

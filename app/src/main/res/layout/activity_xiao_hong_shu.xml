@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <View
+        android:id="@+id/v_vertical_1"
+        style="@style/verticalLine"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"/>
+
+    <View
+        android:id="@+id/v_horizontal_left_1"
+        style="@style/horizontalLine"
+        android:layout_width="100dp"
+        android:layout_alignTop="@id/v_vertical_1"
+        android:layout_toLeftOf="@id/v_vertical_1"/>
+
+    <View
+        android:id="@+id/v_horizontal_left_2"
+        style="@style/horizontalLine"
+        android:layout_width="130dp"
+        android:layout_alignTop="@id/v_vertical_1"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@id/v_vertical_1"/>
+
+
+    <View
+        android:id="@+id/v_horizontal_left_3"
+        style="@style/horizontalLine"
+        android:layout_width="150dp"
+        android:layout_alignBottom="@id/v_vertical_1"
+        android:layout_toLeftOf="@id/v_vertical_1"/>
+
+
+    <View
+        android:id="@+id/v_horizontal_right_1"
+        style="@style/horizontalLine"
+        android:layout_width="100dp"
+        android:layout_alignTop="@id/v_vertical_1"
+        android:layout_toRightOf="@id/v_vertical_1"/>
+
+    <View
+        android:id="@+id/v_horizontal_right_2"
+        style="@style/horizontalLine"
+        android:layout_width="130dp"
+        android:layout_alignTop="@id/v_vertical_1"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/v_vertical_1"/>
+
+    <View
+        android:id="@+id/v_horizontal_right_3"
+        style="@style/horizontalLine"
+        android:layout_width="150dp"
+        android:layout_alignBottom="@id/v_vertical_1"
+        android:layout_toRightOf="@id/v_vertical_1"/>
+
+    <TextView
+        android:id="@+id/tv_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/v_horizontal_left_1"
+        android:layout_alignLeft="@id/v_horizontal_left_1"
+        android:layout_marginBottom="2dp"
+        android:text="小红书小红"
+        android:shadowColor="#4d000000"
+        android:shadowDx="1"
+        android:shadowDy="5"
+        android:shadowRadius="3"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="visible"/>
+
+
+    <TextView
+        android:id="@+id/tv_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/v_horizontal_left_2"
+        android:layout_alignLeft="@+id/v_horizontal_left_2"
+        android:layout_marginBottom="2dp"
+        android:text="小白书小白书小"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/tv_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_horizontal_right_3"
+        android:layout_alignEnd="@+id/v_horizontal_right_3"
+        android:layout_alignRight="@+id/v_horizontal_right_3"
+        android:layout_marginBottom="2dp"
+        android:text="小蓝书小蓝书小蓝书"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="start"/>
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@id/v_vertical_1"
+        android:layout_marginBottom="-15dp"
+        android:layout_marginRight="-15dp"
+        android:layout_toLeftOf="@id/v_vertical_1"
+        android:src="@mipmap/ic_launcher_round"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@id/v_vertical_1"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_toLeftOf="@id/v_vertical_1"
+        android:src="@mipmap/ic_launcher_round"
+        android:visibility="visible"/>
+    <TextView
+        android:id="@+id/TitleOneTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题一哈哈哈"
+        android:textColor="@color/white"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="130px"/>
+    <ImageView
+        android:id="@+id/animIv"
+        android:layout_toRightOf="@id/TitleOneTv"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/white"/>
+</RelativeLayout>

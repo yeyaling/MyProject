@@ -37,7 +37,7 @@ public class MainActivity extends BaseActivity {
 
     private ViewPager mViewPager;
     private PagerAdapter mAdapter;
-    private FrameLayout fl;
+    private FrameLayout fl;//11111
 
     int[] imgRes = {R.mipmap.a, R.mipmap.b, R.mipmap.c, R.mipmap.d,
             R.mipmap.e, R.mipmap.f, R.mipmap.g, R.mipmap.h, R.mipmap.i};
